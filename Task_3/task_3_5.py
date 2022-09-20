@@ -30,10 +30,7 @@ def get_negafib(count: int):
 
 def get_all_fib(count: int):
     """returns a list of negafibonacci plus fibonacci sequence"""
-    result = list(reversed(get_negafib(count)))
-    result.append(0)
-    result.extend(get_fib(count))
-    return result
+    return list(reversed(get_negafib(count))) + [0] + get_fib(count)
 
 
 print(get_fib(8))
