@@ -5,6 +5,7 @@
 # Напишите такую программу, которая найдет палиндром введенного пользователем числа.
 
 def check_int():
+    """checks that the input is a number"""
     while True:
         try:
             number = int(input('Please enter a number: '))
@@ -20,4 +21,5 @@ def get_palindrome(num):
     return result
 
 
-print(get_palindrome(check_int()))
+if __name__ == '__main__':
+    print(get_palindrome(check_int()))
